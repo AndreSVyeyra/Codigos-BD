@@ -12,7 +12,13 @@ ALTER TABLE pais ADD interesse ENUM('0','1','2','3','4','5','6','7','8','9','10'
 
 ALTER TABLE cidade ADD melhoresRest VARCHAR(300) DEFAULT '';
 
-INSERT INTO ponto_tu (coordenada) VALUES(POINT(1.324345,2.54565));
+INSERT INTO ponto_tu (nome,coordenada) VALUES('Ponte da Amizade',POINT(1.324345,2.54565));
+
+SELECT*, AsText(coordenada) FROM ponto_tu;
 
 SELECT * FROM ponto_tu;
+
+ALTER TABLE ponto_tu
+DROP COLUMN coordenada;
+
 

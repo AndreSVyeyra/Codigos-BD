@@ -93,4 +93,3 @@ LIMIT 1;
 
 SELECT * FROM cidade;
 
-
